@@ -78,8 +78,6 @@ enum {
 }
 
 - (IBAction)onTap:(id)sender {
-	NSLog(@"tap! %d", self.currentTextTag);
-
 	if (self.currentTextTag == FahrenheitTag) {
 		float fahrenheitValue = [self.fahrenheitText.text floatValue];
 		float celsiusValue = (fahrenheitValue - 32) / 1.8;
@@ -98,4 +96,5 @@ enum {
 	[selectedTextField setBackgroundColor:[UIColor greenColor]];
 	[oldTextField setBackgroundColor:[UIColor whiteColor]];
 }
+
 @end
